@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class Enemy_BehaviorTree : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
     [SerializeField] private int playerDistance;
+    private GameObject player;
     private const float stunDelay = 5;    
     private NavMeshAgent agent;
     private bool stun = false;
@@ -16,6 +16,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     
@@ -23,13 +24,13 @@ public class Enemy_BehaviorTree : MonoBehaviour
     {
         if (!stun) {
             if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
+                Debug.Log("Seeking " + player.transform.position);
                 seek(player.transform.position);
             } else {
                 wander();
             }   
 
         } else {
-            //Debug.Log(Time.realtimeSinceStartup);
             if (stunTime < Time.realtimeSinceStartup) {
                 stun = false;
                 Debug.Log("Stun Done");
@@ -40,7 +41,6 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
     private void seek(Vector3 location)
     {
-        //seeking = true;
         agent.SetDestination(location);
 
     }
@@ -58,7 +58,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
         Vector3 targetLocal = wanderTarget + new Vector3(0, 0, wanderDistance);
         Vector3 targetWorld = gameObject.transform.InverseTransformVector(targetLocal);
-
+        Debug.Log("Wandering to " + targetWorld);
         seek(targetWorld);
 
     }
