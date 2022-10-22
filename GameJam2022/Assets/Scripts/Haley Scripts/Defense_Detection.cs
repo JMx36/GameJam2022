@@ -14,6 +14,11 @@ public class Defense_Detection : MonoBehaviour
         stun(other);
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        stun(other);
+    }
+
     private void stun(Collider other)
     {
         Enemy_BehaviorTree BehaviorTree = other.gameObject.GetComponent<Enemy_BehaviorTree>();
