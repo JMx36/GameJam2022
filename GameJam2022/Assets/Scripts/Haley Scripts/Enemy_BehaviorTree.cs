@@ -7,7 +7,8 @@ public class Enemy_BehaviorTree : MonoBehaviour
 {
     [SerializeField] private int playerDistance;
     private GameObject player;
-    private const float stunDelay = 5;    
+    private const float stunDelay = 5;
+    private const float stealDist = 4;
     private NavMeshAgent agent;
     private bool stun = false;
     private float stunTime = 0;
@@ -23,9 +24,14 @@ public class Enemy_BehaviorTree : MonoBehaviour
     void FixedUpdate()
     {
         if (!stun) {
-            if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
+            if (Vector3.Distance(transform.position, player.transform.position) < stealDist) {
+                Debug.Log("Steal Candy");
+                // ADD COOLDOWN
+            }
+            else if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
                 Debug.Log("Seeking " + player.transform.position);
                 seek(player.transform.position);
+                
             } else {
                 wander();
             }   
