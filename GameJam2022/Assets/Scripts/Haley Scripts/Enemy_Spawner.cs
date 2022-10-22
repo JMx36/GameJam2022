@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject enemy;
+    [SerializeField] private List<GameObject> enemy;
     [SerializeField] private float minTime = 5;
     [SerializeField] private float maxTime = 30;
     [SerializeField] private float cdTime = 15;
@@ -17,7 +17,8 @@ public class Enemy_Spawner : MonoBehaviour
     {
         if (spawn) {
             if (spawnTime < Time.realtimeSinceStartup) {
-                Instantiate(enemy, transform.position, Quaternion.identity);
+                int index = Random.Range(0, enemy.Count - 1);
+                Instantiate(enemy[index], transform.position, Quaternion.identity);
                 spawn = false;
                 cd = true;
                 cdTime = Time.realtimeSinceStartup + cdTime;
