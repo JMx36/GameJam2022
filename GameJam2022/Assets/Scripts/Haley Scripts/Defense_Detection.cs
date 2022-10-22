@@ -21,8 +21,10 @@ public class Defense_Detection : MonoBehaviour
 
     private void stun(Collider other)
     {
+        var key = KeyCode.F;
+
         Enemy_BehaviorTree BehaviorTree = other.gameObject.GetComponent<Enemy_BehaviorTree>();
-        if (BehaviorTree != null && Input.GetKeyDown(KeyCode.F)) {
+        if (BehaviorTree != null && (Input.GetKeyDown(key) || Input.GetKey(key) || Input.GetKeyUp(key))) {
             BehaviorTree.setStun();
         }
     }
