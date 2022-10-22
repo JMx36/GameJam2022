@@ -44,33 +44,24 @@ public class GameManager : MonoBehaviour
     public static void NewGame()
     {
         ///state = GAMESTATE.PLAYING;
-        manager.level = 1;
-        SceneManager.LoadScene(manager.levels[0]);
+        //SceneManager.LoadScene(manager.levels[0]);
         Cursor.lockState = CursorLockMode.Locked;
-        Time.timeScale = 1.0f;
+        //Time.timeScale = 1.0f;
     }
 
     public static void NextLevel()
     {
         ///state = GAMESTATE.PLAYING;
         //AudioManager.instance.Stop("MainTheme");
-        SceneManager.LoadScene(manager.levels[manager.level++]);
+        ///SceneManager.LoadScene(manager.levels[manager.level++]);
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     public static void RestartLevel()
     {
-        if (lastScene == 1)
+        if (true)
         {
             SceneManager.LoadScene(1);
-        }
-        else if (lastScene == 2)
-        {
-            SceneManager.LoadScene(2);
-        }
-        else if (lastScene == 3)
-        {
-            SceneManager.LoadScene(3);
         }
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -93,35 +84,36 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
-/*    public static void ResumeGame()
-    {
-        ///state = GAMESTATE.PLAYING;
-        Time.timeScale = 1.0f;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    /*    public static void ResumeGame()
+        {
+            ///state = GAMESTATE.PLAYING;
+            Time.timeScale = 1.0f;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
 
-    public static void QuitToMenu()
-    {
-        ///state = GAMESTATE.TITLESCREEN;
-        AudioManager.instance.Stop("MainTheme");
-        instance.level = 1;
-        SceneManager.LoadScene(0);
-    }
+        public static void QuitToMenu()
+        {
+            ///state = GAMESTATE.TITLESCREEN;
+            AudioManager.instance.Stop("MainTheme");
+            instance.level = 1;
+            SceneManager.LoadScene(0);
+        }
 
-    public static void WinScreen()
-    {
-        ///state = GAMESTATE.WIN;
-        AudioManager.instance.Stop("MainTheme");
-        Cursor.lockState = CursorLockMode.None;
-        SceneManager.LoadScene("Win");
-    }
+        public static void WinScreen()
+        {
+            ///state = GAMESTATE.WIN;
+            AudioManager.instance.Stop("MainTheme");
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Win");
+        }
 
-    public static void LoseScreen()
-    {
-        ///state = GAMESTATE.LOSE;
-        AudioManager.instance.Stop("MainTheme");
-        Cursor.lockState = CursorLockMode.None;
-        lastScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene("Lose");
-    }
-}*/
+        public static void LoseScreen()
+        {
+            ///state = GAMESTATE.LOSE;
+            AudioManager.instance.Stop("MainTheme");
+            Cursor.lockState = CursorLockMode.None;
+            lastScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene("Lose");
+        }
+    */
+}
