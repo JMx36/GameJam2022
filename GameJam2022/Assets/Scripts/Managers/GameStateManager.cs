@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Written by Zane
-public class GameManager : MonoBehaviour
+
+public class GameStateManager : MonoBehaviour
 {
     [SerializeField] private string SceneName;
 
     private bool hasStarted = false;
 
-    private static GameManager manager;
+    private static GameStateManager manager;
 
     enum GAMESTATE
     {
