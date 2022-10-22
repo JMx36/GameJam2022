@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
-    [SerializeField] private string SceneName;
-
     private bool hasStarted = false;
 
     private static GameStateManager manager;
+
+    private int high_score = 0;
 
     enum GAMESTATE
     {
@@ -34,6 +34,15 @@ public class GameStateManager : MonoBehaviour
         {
             Destroy(this);
         }
+
+        if (PlayerPrefs.GetInt("HighScore") > 0)
+        {
+            manager.high_score = PlayerPrefs.GetInt("HighScore");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("HighScore", 0);
+        }
     }
 
     public static void TitleScreen()
@@ -43,29 +52,15 @@ public class GameStateManager : MonoBehaviour
 
     public static void NewGame()
     {
-        ///state = GAMESTATE.PLAYING;
-        //SceneManager.LoadScene(manager.levels[0]);
-        Cursor.lockState = CursorLockMode.Locked;
-        //Time.timeScale = 1.0f;
-    }
 
-    public static void NextLevel()
-    {
-        ///state = GAMESTATE.PLAYING;
-        //AudioManager.instance.Stop("MainTheme");
-        ///SceneManager.LoadScene(manager.levels[manager.level++]);
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    public static void RestartLevel()
-    {
-        if (true)
+        if (manager.hasStarted) 
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Level1"); //TODO Change this to the actual name
         }
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Time.timeScale = 1.0f;
+        else
+        {
+            SceneManager.LoadScene("TitleScreen"); //TODO Change this to the actual name
+        }
     }
 
     public static void PauseRestart()
@@ -84,36 +79,39 @@ public class GameStateManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
-    /*    public static void ResumeGame()
-        {
-            ///state = GAMESTATE.PLAYING;
-            Time.timeScale = 1.0f;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
 
-        public static void QuitToMenu()
-        {
-            ///state = GAMESTATE.TITLESCREEN;
-            AudioManager.instance.Stop("MainTheme");
-            instance.level = 1;
-            SceneManager.LoadScene(0);
-        }
+    public static void EndScene() 
+    {
+        SceneManager.LoadScene("EndScene");
+    }
 
-        public static void WinScreen()
-        {
-            ///state = GAMESTATE.WIN;
-            AudioManager.instance.Stop("MainTheme");
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("Win");
-        }
+    
+    public int getHighScore()
+    {
+        return manager.high_score;
+    }
+    
+    public void AddPoints(int points)
+    {
+        manager.high_score += points;
+    }
 
-        public static void LoseScreen()
+    public void LosePoints(int points)
+    {
+        if (manager.high_score < points)
         {
-            ///state = GAMESTATE.LOSE;
-            AudioManager.instance.Stop("MainTheme");
-            Cursor.lockState = CursorLockMode.None;
-            lastScene = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene("Lose");
+            SceneManager.LoadScene("EndScene"); //TODO Change the name to the actual one
         }
-    */
+        else
+        {
+            manager.high_score -= points;
+        }
+    }
+
+    public void Quit()
+    {
+        PlayerPrefs.SetInt("HighScore", manager.high_score);
+        Application.Quit();
+    }
+
 }
