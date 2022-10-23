@@ -29,7 +29,6 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (!hiding) {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
             Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
@@ -41,7 +40,6 @@ public class Movement : MonoBehaviour
 
 
             controller.Move(direction * speed * Time.deltaTime);
-        }
         
     }
 }

@@ -10,17 +10,6 @@ public class GameStateManager : MonoBehaviour
 
     private static int high_score = 0;
 
-    enum GAMESTATE
-    {
-        TITLESCREEN,
-        PLAYING,
-        PAUSED,
-        WIN,
-        LOSE
-    }
-
-    ///private static GAMESTATE state;
-
     private void Awake()
     {
         if (manager == null)
@@ -43,11 +32,6 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    public static void TitleScreen()
-    {
-        ///state = GAMESTATE.TITLESCREEN;
-    }
-
     public static void NewGame()
     {
         if (manager.hasStarted) 
@@ -66,16 +50,13 @@ public class GameStateManager : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
-
-        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1.0f;
     }
 
-    public static void PauseGame()
+    public static void PauseGame(float time_value)
     {
         ///state = GAMESTATE.PAUSED;
-        Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = time_value;
     }
 
 
@@ -107,7 +88,7 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    public void Quit()
+    public static void Quit()
     {
         Debug.Log("Quitting");
         //PlayerPrefs.SetInt("HighScore", high_score);
