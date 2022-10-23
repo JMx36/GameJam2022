@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_Name
-      value: house_small (no work)
+      value: Light blue small house
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
@@ -185,6 +185,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
   m_PrefabInstance: {fileID: 42022582}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &42022584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1800960603579142659, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
+  m_PrefabInstance: {fileID: 42022582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &42022585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42022584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1912913, y: 1.171749, z: 9.137479}
+  m_Center: {x: 0.00000023841864, y: 0.5858738, z: -0.0000038146973}
 --- !u!1 &95898318
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,13 +586,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -724,13 +754,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -788,7 +830,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 714740d80f34b41a7995007a40d44e1a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 714740d80f34b41a7995007a40d44e1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -832,7 +874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 714740d80f34b41a7995007a40d44e1a, type: 3}
       propertyPath: m_Name
-      value: house_big (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 714740d80f34b41a7995007a40d44e1a, type: 3}
@@ -841,6 +883,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 714740d80f34b41a7995007a40d44e1a, type: 3}
   m_PrefabInstance: {fileID: 276532281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &276532283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5246065266866770182, guid: 714740d80f34b41a7995007a40d44e1a, type: 3}
+  m_PrefabInstance: {fileID: 276532281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &276532284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276532283}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.230101, y: 1.1717492, z: 9.824297}
+  m_Center: {x: -0.00000047683716, y: 0.58587426, z: 0.00000023841858}
 --- !u!1 &285671631
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +931,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 276532282}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &285671633
 Light:
@@ -1314,63 +1374,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1001 &457456993
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 276532282}
-    m_Modifications:
-    - target: {fileID: 2501210876524972245, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_Name
-      value: Pumpkin_candy_bucket
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.029222488
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.046235085
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.02771
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445546812591389959, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9b80bae9218343c4ab8dff3b12beba44, type: 3}
 --- !u!1 &477556079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,7 +1404,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 276532282}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &477556081
 Light:
@@ -1705,13 +1708,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2410,6 +2425,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752387128}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &762713855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1800960603579142659, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
+  m_PrefabInstance: {fileID: 2057982203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &762713856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762713855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1912913, y: 1.171749, z: 9.137479}
+  m_Center: {x: 0.00000023841864, y: 0.5858738, z: 0}
 --- !u!1001 &764632166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2443,11 +2476,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_Name
-      value: DH (work, but fix collider)
+      value: Light blue small house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2762,17 +2795,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 981445075362161957, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3137,7 +3182,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3181,7 +3226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_Name
-      value: house_small (work, fix collider)
+      value: Light blue small house
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
@@ -3190,6 +3235,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
   m_PrefabInstance: {fileID: 883081511}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &883081513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1800960603579142659, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
+  m_PrefabInstance: {fileID: 883081511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &883081514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883081513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1912913, y: 1.171749, z: 9.137479}
+  m_Center: {x: 0.00000023841864, y: 0.5858738, z: 0.0000038146973}
+--- !u!1 &883081515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6817716009932916431, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
+  m_PrefabInstance: {fileID: 883081511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &883081516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3117991621716013975, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
+  m_PrefabInstance: {fileID: 883081511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &883081517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883081515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.60302895, y: 1.3176365, z: 0.573516}
+  m_Center: {x: 0.00000005960466, y: 0.65881824, z: 0}
+--- !u!65 &883081518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883081516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.60302895, y: 1.3176365, z: 0.573516}
+  m_Center: {x: 0.00000005960466, y: 0.65881824, z: 0}
 --- !u!1 &885057715
 GameObject:
   m_ObjectHideFlags: 3
@@ -3392,11 +3491,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_Name
-      value: Decorated House 1 (work, fix)
+      value: Light blue small house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3661,28 +3760,28 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2057982204}
   - {fileID: 276532282}
   - {fileID: 969762951}
-  - {fileID: 42022583}
-  - {fileID: 883081512}
   - {fileID: 1090811828}
   - {fileID: 1273120148}
   - {fileID: 561179874}
   - {fileID: 955888970}
   - {fileID: 168828828}
   - {fileID: 2114101020}
-  - {fileID: 901092604}
   - {fileID: 1901617265}
   - {fileID: 233775402}
-  - {fileID: 1169279400}
   - {fileID: 1928776692}
+  - {fileID: 1623092015}
+  - {fileID: 828019076}
+  - {fileID: 2057982204}
+  - {fileID: 883081512}
+  - {fileID: 42022583}
+  - {fileID: 901092604}
+  - {fileID: 1169279400}
   - {fileID: 1532290048}
   - {fileID: 1218451167}
   - {fileID: 764632167}
   - {fileID: 1674139727}
-  - {fileID: 1623092015}
-  - {fileID: 828019076}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3693,13 +3792,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3849,17 +3960,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
-    - target: {fileID: 981445075362161957, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.44
-      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3908,6 +4015,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
   m_PrefabInstance: {fileID: 969762950}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1050775493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6817716009932916431, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
+  m_PrefabInstance: {fileID: 2057982203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1050775497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050775493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.60302895, y: 1.3176365, z: 0.573516}
+  m_Center: {x: 0.00000005960466, y: 0.65881824, z: 0}
 --- !u!1 &1079367545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,13 +4231,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4653,11 +4790,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_Name
-      value: Decorated House (works)
+      value: Light blue small house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5095,11 +5232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_Name
-      value: Decorated House 1 (work, fix)
+      value: Light blue small house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5343,13 +5480,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6292,100 +6441,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1532179629
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1532179630}
-  - component: {fileID: 1532179631}
-  m_Layer: 0
-  m_Name: Point Light (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1532179630
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532179629}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.15999985, y: 2.863, z: 2.593998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 969762951}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!108 &1532179631
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532179629}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 1, g: 0.3860869, b: 0.3339622, a: 1}
-  m_Intensity: 1.27
-  m_Range: 4.52
-  m_SpotAngle: 83
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1001 &1532290047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6403,11 +6458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Light blue small house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6456,63 +6511,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
   m_PrefabInstance: {fileID: 1532290047}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1536566696
-PrefabInstance:
+--- !u!1 &1532669277
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 969762951}
-    m_Modifications:
-    - target: {fileID: 127168, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_Name
-      value: Cauldron_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.033
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.023000717
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.2929993
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 462004, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1795059418cbe984a9f659ea409db85a, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1532669278}
+  m_Layer: 0
+  m_Name: Fence Border
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1532669278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532669277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2039817141}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546002678
 GameObject:
   m_ObjectHideFlags: 0
@@ -6704,6 +6733,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580354827}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1589988029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3117991621716013975, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
+  m_PrefabInstance: {fileID: 2057982203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1589988033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589988029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.60302895, y: 1.3176365, z: 0.573516}
+  m_Center: {x: 0.00000005960466, y: 0.65881824, z: 0.0000038146973}
 --- !u!1001 &1623092014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6711,13 +6758,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7129,11 +7188,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_Name
-      value: Decorated House (works)
+      value: Light blue small house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: d4ae49bccf6e2e441b8ea920845e7efc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7801,13 +7860,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8051,13 +8122,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8435,6 +8518,38 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &2039817140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2039817141}
+  m_Layer: 0
+  m_Name: Corner 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2039817141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039817140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.899399, y: -30.44801, z: 21.71365}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1532669278}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2051584217
 GameObject:
   m_ObjectHideFlags: 0
@@ -8538,7 +8653,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8582,7 +8697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
       propertyPath: m_Name
-      value: house_small (no work)
+      value: Light blue small house
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
@@ -8591,100 +8706,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3221a030c87c48a19a6d00f6a8997ad, type: 3}
   m_PrefabInstance: {fileID: 2057982203}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2070437919
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2070437920}
-  - component: {fileID: 2070437921}
-  m_Layer: 0
-  m_Name: Spot Light (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2070437920
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070437919}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.15999985, y: 2.863, z: 2.593998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 969762951}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!108 &2070437921
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070437919}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 0
-  m_Shape: 0
-  m_Color: {r: 1, g: 0.034782607, b: 0, a: 1}
-  m_Intensity: 1.27
-  m_Range: 10
-  m_SpotAngle: 83
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1001 &2114101019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8692,13 +8713,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947874927}
     m_Modifications:
+    - target: {fileID: 1532179630, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650213274, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070437920, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763416, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_Name
-      value: Decorated House (no work)
+      value: Dark blue big house
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9196123440825763419, guid: 4a2e5d3114bfa2f4bbc40b24607d85b6, type: 3}
       propertyPath: m_LocalPosition.x
