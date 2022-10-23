@@ -9,6 +9,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
     private GameObject player;
     private NavMeshAgent agent;
     private Movement move;
+    private PlayerSee see;
 
     private const float stunDelay = 5f;
     private bool stun = false;
@@ -27,6 +28,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
         move = player.GetComponent<Movement>();
+        see = GetComponentInChildren<PlayerSee>();
     }
 
     
@@ -111,15 +113,20 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
     private bool canSeeTarget()
     {
-        RaycastHit raycastInfo;
-        Vector3 rayToTarget = player.transform.position - transform.position;
-
-        if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
-            if (raycastInfo.transform.gameObject.tag == "Player" && !move.getHiding()) {
-                return true;
-            }
+        if(see.seePlayer && !move.getHiding()) {
+            return true;
         }
         return false;
+
+        //RaycastHit raycastInfo;
+        //Vector3 rayToTarget = player.transform.position - transform.position;
+
+        //if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
+        //    if (raycastInfo.transform.gameObject.tag == "Player" && !move.getHiding()) {
+        //        return true;
+        //    }
+        //}
+        //return false;
     }
 
 }
