@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
 <<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
 guid: 4cbd8a843f4e0ed43ba1930bb73eb83d
 ========
 guid: a28a8408bd8b6c74883ffc528fc37c79
 >>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
+========
+guid: eef4b2515b7422e499385ac36e3cf0af
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -27,11 +31,14 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 1
   streamingMipmapsPriority: 0
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
 <<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
 ========
   vTOnly: 0
   ignoreMasterTextureLimit: 0
 >>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
+========
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -41,12 +48,16 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
 <<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
+========
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
     aniso: 3
     mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
 ========
     aniso: 1
     mipBias: 0
@@ -54,6 +65,8 @@ TextureImporter:
     wrapV: 0
     wrapW: 0
 >>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
+========
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -65,10 +78,14 @@ TextureImporter:
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
+  alphaUsage: 0
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
   textureType: 0
+========
+  textureType: 6
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -82,11 +99,15 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
 <<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
     textureCompression: 0
 ========
     textureCompression: 1
 >>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/Picture_1_Height.png.meta
+========
+    textureCompression: 0
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

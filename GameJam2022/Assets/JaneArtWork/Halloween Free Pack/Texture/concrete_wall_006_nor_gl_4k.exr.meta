@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_nor_gl_4k.exr.meta
 guid: e3ab7b8c376f9724a9b63f3b381ba5b9
+========
+guid: d1642fbd945666a4485fe65b93b6ce04
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +11,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -53,8 +57,13 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_nor_gl_4k.exr.meta
   textureType: 1
   textureShape: 2
+========
+  textureType: 0
+  textureShape: 1
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
@@ -77,6 +86,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_nor_gl_4k.exr.meta
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -113,6 +123,8 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+========
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
