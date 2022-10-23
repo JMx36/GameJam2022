@@ -17,7 +17,8 @@ public class Enemy_BehaviorTree : MonoBehaviour
     [SerializeField] private const float stealDist = 3f;
     [SerializeField]private float stealCD = 5f;
     private float stealTime = 0f;
-    private int stealAmount = 1;
+    private static int stealAmount = 10;
+    private static int stealIncrease = 10;
 
     private static GameStateManager manager;
     static public int CANDY = 10; // FILLER VARIABLE
@@ -103,7 +104,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
         if (stealTime < Time.realtimeSinceStartup) {
             FindObjectOfType<AudioManager>().Play("Steal");
             manager.LosePoints(stealAmount);
-            stealAmount++;
+            stealAmount += stealIncrease;
             stealTime = Time.realtimeSinceStartup + stealCD;
             //CANDY -= stealAmount;
             //Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
