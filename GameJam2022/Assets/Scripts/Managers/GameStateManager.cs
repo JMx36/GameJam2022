@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +8,7 @@ public class GameStateManager : MonoBehaviour
 
     private static GameStateManager manager;
 
-    private int high_score = 0;
+    private static int high_score = 0;
 
     enum GAMESTATE
     {
@@ -37,7 +35,7 @@ public class GameStateManager : MonoBehaviour
 
         if (PlayerPrefs.GetInt("HighScore") > 0)
         {
-            manager.high_score = PlayerPrefs.GetInt("HighScore");
+            high_score = PlayerPrefs.GetInt("HighScore");
         }
         else
         {
@@ -52,7 +50,6 @@ public class GameStateManager : MonoBehaviour
 
     public static void NewGame()
     {
-
         if (manager.hasStarted) 
         {
             SceneManager.LoadScene("Level1"); //TODO Change this to the actual name
@@ -61,6 +58,8 @@ public class GameStateManager : MonoBehaviour
         {
             SceneManager.LoadScene("TitleScreen"); //TODO Change this to the actual name
         }
+        Debug.Log("New Game");
+        manager.hasStarted = true;
     }
 
     public static void PauseRestart()
@@ -88,29 +87,30 @@ public class GameStateManager : MonoBehaviour
     
     public int getHighScore()
     {
-        return manager.high_score;
+        return high_score;
     }
     
     public void AddPoints(int points)
     {
-        manager.high_score += points;
+        high_score += points;
     }
 
     public void LosePoints(int points)
     {
-        if (manager.high_score < points)
+        if (high_score < points)
         {
             SceneManager.LoadScene("EndScene"); //TODO Change the name to the actual one
         }
         else
         {
-            manager.high_score -= points;
+            high_score -= points;
         }
     }
 
     public void Quit()
     {
-        PlayerPrefs.SetInt("HighScore", manager.high_score);
+        Debug.Log("Quitting");
+        //PlayerPrefs.SetInt("HighScore", high_score);
         Application.Quit();
     }
 
