@@ -5,9 +5,6 @@ using UnityEngine;
 public class CandySpawner : MonoBehaviour
 {
     [SerializeField]
-    private List<Transform> spawnLocations;
-
-    [SerializeField]
     private GameObject lowPrefab;
     [SerializeField]
     private GameObject midPrefab;
@@ -15,46 +12,46 @@ public class CandySpawner : MonoBehaviour
     private GameObject highSpawn;
 
     [SerializeField]
-    private float spawnRate = 5f;
+    private float spawnRateLow = 5f;
 
+    [SerializeField]
+    private float spawnRateHigh = 10f;
 
+    private bool spawning;
 
-    void Start()
+    private void Start()
     {
-        StartCoroutine(SpawnCandy());
+        spawning = false;
+    }
+    private void FixedUpdate()
+    {
+        if (transform.childCount == 0 && !spawning)
+        {
+            StartCoroutine(SpawnCandy());
+        }
     }
 
     private IEnumerator SpawnCandy()
     {
-        while (true) {
+        spawning = true;
 
-            Transform spawnLoc = null;
+        yield return new WaitForSeconds(Random.Range(spawnRateLow, spawnRateLow));
 
-            while (!spawnLoc)
-            {
-                int index = Random.Range(0, spawnLocations.Count);
+        int randNum = Random.Range(0, 100);
 
-                if (spawnLocations[index].childCount == 0)
-                {
-                    spawnLoc = spawnLocations[index];
-                    yield return new WaitForSeconds(spawnRate);
-                }
-            }
-
-            int randNum = Random.Range(0, 100);
-
-            if (randNum < 70)
-            {
-                Instantiate(lowPrefab, spawnLoc);
-            }
-            else if (randNum < 98)
-            {
-                Instantiate(midPrefab, spawnLoc);
-            }
-            else
-            {
-                Instantiate(highSpawn, spawnLoc);
-            }
+        if (randNum < 70)
+        {
+            Instantiate(lowPrefab, transform);
         }
+        else if (randNum < 98)
+        {
+            Instantiate(midPrefab, transform);
+        }
+        else
+        {
+            Instantiate(highSpawn, transform);
+        }
+
+        spawning = false;
     }
 }

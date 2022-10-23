@@ -8,6 +8,9 @@ public class Candy : MonoBehaviour
     private Transform cam;
 
     [SerializeField]
+    private bool faceCam = true;
+
+    [SerializeField]
     private int point;
 
     void Start()
@@ -17,7 +20,10 @@ public class Candy : MonoBehaviour
     }
     void Update()
     {
-        transform.LookAt(cam);
+        if (faceCam)
+        {
+            transform.LookAt(cam);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
