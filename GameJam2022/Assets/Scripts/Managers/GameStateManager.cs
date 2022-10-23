@@ -8,6 +8,8 @@ public class GameStateManager : MonoBehaviour
 
     private static int high_score = 0;
 
+    private static int candies = 0; 
+
     private void Awake()
     {
         if (manager == null)
@@ -32,6 +34,7 @@ public class GameStateManager : MonoBehaviour
 
     public static void NewGame()
     {
+        candies = 0;
         SceneManager.LoadScene("MAIN_SCENE"); //TODO Change this to the actual name
         Debug.Log("New Game");
     }
@@ -62,25 +65,36 @@ public class GameStateManager : MonoBehaviour
     
     public void AddPoints(int points)
     {
-        high_score += points;
+        candies += points;
+
+        // If high score is less than or equal to candies plus points,
+        // then it adds the difference of high score and cadies to high score. 
+
+        if (high_score <= candies)
+        {
+            int difference = candies - high_score;
+            high_score += difference;
+        }
     }
 
     public void LosePoints(int points)
     {
-        if (high_score < points)
+        // If the amount of candies is less than or equal to the ones being taken away, then it loads the EndScene. 
+        // Substracts the points (or amount of candy) from candies if not.
+        if (candies <= points)
         {
             GameStateManager.EndScene(); //TODO Change the name to the actual one
         }
         else
         {
-            high_score -= points;
+            candies -= points;
         }
     }
 
     public static void Quit()
     {
         Debug.Log("Quitting");
-        //PlayerPrefs.SetInt("HighScore", high_score);
+        PlayerPrefs.SetInt("HighScore", high_score);
         Application.Quit();
     }
 
