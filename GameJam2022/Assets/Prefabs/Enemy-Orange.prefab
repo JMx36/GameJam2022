@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6098924145076851180, guid: 55534b674e1ad4e9988d9be64c8ed52a, type: 3}
+  - {fileID: 2100000, guid: 371883c9030a56647bed9c4cb5fac350, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,7 +145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6098924145076851180, guid: 55534b674e1ad4e9988d9be64c8ed52a, type: 3}
+  - {fileID: 2100000, guid: 371883c9030a56647bed9c4cb5fac350, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -228,7 +228,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6098924145076851180, guid: 55534b674e1ad4e9988d9be64c8ed52a, type: 3}
+  - {fileID: 2100000, guid: 371883c9030a56647bed9c4cb5fac350, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -313,7 +313,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6098924145076851180, guid: 55534b674e1ad4e9988d9be64c8ed52a, type: 3}
+  - {fileID: 2100000, guid: 371883c9030a56647bed9c4cb5fac350, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 2346351086042907460}
   - component: {fileID: 2346351086042907459}
   m_Layer: 0
-  m_Name: Enemy-Black
+  m_Name: Enemy-Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,6 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDistance: 10
+  stealCD: 5
 --- !u!114 &2346351086042907455
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,23 +14,34 @@ public class Movement : MonoBehaviour
     private float turnSmoothTime = .1f;
     float turnSmoothVelocity;
 
-    void Start()
+    private bool hiding = false;
+
+    public bool getHiding()
     {
-        
+        return hiding;
     }
+
+    public void setHiding(bool hiding)
+    {
+        this.hiding = hiding;
+    }
+
 
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
+        if (!hiding) {
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
+            Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
 
-        float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;// + cam.eulerAngles.y;
-        float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-        if (horizontal != 0 || vertical != 0)
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-            
-            
-        controller.Move(direction * speed * Time.deltaTime);
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;// + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            if (horizontal != 0 || vertical != 0)
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+
+            controller.Move(direction * speed * Time.deltaTime);
+        }
+        
     }
 }
