@@ -7,11 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Black
-  m_Shader: {fileID: 4800000, guid: 7cd5de0b884b14f88ab763ef465e1799, type: 3}
+  m_Name: Red
+  m_Shader: {fileID: 4800000, guid: 128c5f1edaefa4c4fb3f9f7a4615edb2, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _SEGMENTED_ON
+  - _SHNOVERLAP_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -68,19 +69,20 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.9
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Lumin: 0
     - _MaxLight: 1
-    - _Metallic: 0.1
+    - _Metallic: 0
     - _MinLight: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0
+    - _OtlWidth: 3
     - _Parallax: 0.02
     - _Segmented: 1
     - _ShnIntense: 1
-    - _ShnOverlap: 0
+    - _ShnOverlap: 1
     - _ShnRange: 0.15
     - _ShnSmooth: 0
     - _SmoothnessTextureChannel: 0
@@ -91,7 +93,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.17354465, g: 0.15786189, b: 0.17998722, a: 1}
+    - _Color: {r: 0.51717633, g: 0, b: 0.7921569, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShnColor: {r: 6.8705883, g: 1.4117647, b: 0, a: 1}
+    - _OtlColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShnColor: {r: 1, g: 0.2901961, b: 0, a: 1}
   m_BuildTextureStacks: []
