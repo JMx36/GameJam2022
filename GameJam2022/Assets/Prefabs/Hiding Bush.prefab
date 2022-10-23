@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1614390320182159983}
   - component: {fileID: 3567836310789529253}
   - component: {fileID: 5777909982134343341}
+  - component: {fileID: 538192131}
   m_Layer: 0
   m_Name: Hiding Bush
   m_TagString: Untagged
@@ -58,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28faff5842cb7e8459e8ff8c69c4b0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  hideText: {fileID: 0}
 --- !u!33 &1614390320182159983
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -120,8 +121,24 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3488092, y: 1.7062864, z: 2.2946043}
-  m_Center: {x: -0.0054811835, y: 0.8531431, z: -0.17941141}
+  m_Size: {x: 2.5466387, y: 1.7062864, z: 2.4201174}
+  m_Center: {x: 0.0076292753, y: 0.8531431, z: -0.24216795}
+--- !u!114 &538192131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063428822502621040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &402845642595628634
 PrefabInstance:
   m_ObjectHideFlags: 0

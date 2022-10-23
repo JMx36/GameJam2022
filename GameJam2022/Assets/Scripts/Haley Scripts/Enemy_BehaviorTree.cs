@@ -5,9 +5,10 @@ using UnityEngine.AI;
 
 public class Enemy_BehaviorTree : MonoBehaviour
 {
-    [SerializeField] private int playerDistance;
+    //[SerializeField] private int playerDistance;
     private GameObject player;
     private NavMeshAgent agent;
+    private Movement move;
 
     private const float stunDelay = 5f;
     private bool stun = false;
@@ -25,6 +26,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
+        move = player.GetComponent<Movement>();
     }
 
     
@@ -32,23 +34,13 @@ public class Enemy_BehaviorTree : MonoBehaviour
     {
         if (!stun) {
 
-            if (Vector3.Distance(transform.position, player.transform.position) < stealDist) {
-                if (stealTime < Time.realtimeSinceStartup) {
-                    CANDY -= stealAmount;
-                    Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
-                    if (CANDY <= 0) {
-                        //GAMEOVER
-                        Debug.Log("OUT OF CANDY");
-                    } else {
-                        stealAmount++;
-                        stealTime = Time.realtimeSinceStartup + stealCD;
-                    }
-
+            if (canSeeTarget()) {
+                
+                if (Vector3.Distance(transform.position, player.transform.position) < stealDist) {
+                    stealCandy();
+                } else {
+                    seek(player.transform.position);
                 }
-            }
-            else if (canSeeTarget()) {
-            //else if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
-                seek(player.transform.position);
                 
             } else {
                 wander();
@@ -94,10 +86,27 @@ public class Enemy_BehaviorTree : MonoBehaviour
     {
         if (!stun) {
             stun = true;
+            seek(transform.position);
             stunTime = Time.realtimeSinceStartup + (stunDelay);
             Debug.Log("Stunned till " + stunTime + "\nCurrent time: " + Time.realtimeSinceStartup);
         }
         
+    }
+
+    private void stealCandy()
+    {
+        if (stealTime < Time.realtimeSinceStartup) {
+            CANDY -= stealAmount;
+            Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
+            if (CANDY <= 0) {
+                //GAMEOVER
+                Debug.Log("OUT OF CANDY");
+            } else {
+                stealAmount++;
+                stealTime = Time.realtimeSinceStartup + stealCD;
+            }
+
+        }
     }
 
     private bool canSeeTarget()
@@ -106,7 +115,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
         Vector3 rayToTarget = player.transform.position - transform.position;
 
         if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
-            if (raycastInfo.transform.gameObject.tag == "Player") {
+            if (raycastInfo.transform.gameObject.tag == "Player" && !move.getHiding()) {
                 return true;
             }
         }
