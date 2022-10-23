@@ -32,8 +32,8 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
 
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
+            //s.source.volume = s.volume;
+            //s.source.pitch = s.pitch;
             s.source.loop = s.loop;
             if (!s.bgm) {
                 s.source.outputAudioMixerGroup = sfxGroup;
@@ -41,6 +41,8 @@ public class AudioManager : MonoBehaviour
                 s.source.outputAudioMixerGroup = musicGroup;
             }
         }
+
+        Play("Theme Song");
 
     }
 

@@ -87,6 +87,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
     public void setStun()
     {
         if (!stun) {
+            FindObjectOfType<AudioManager>().Play("Block");
             stun = true;
             seek(transform.position);
             stunTime = Time.realtimeSinceStartup + (stunDelay);
@@ -98,6 +99,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
     private void stealCandy()
     {
         if (stealTime < Time.realtimeSinceStartup) {
+            FindObjectOfType<AudioManager>().Play("Steal");
             CANDY -= stealAmount;
             Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
             if (CANDY <= 0) {

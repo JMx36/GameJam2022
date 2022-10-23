@@ -46,4 +46,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxGroup: {fileID: -5293529254685087416, guid: da0831ea091bf89408ac892147d49209, type: 2}
   musicGroup: {fileID: -1096603750216283064, guid: da0831ea091bf89408ac892147d49209, type: 2}
-  sounds: []
+  sounds:
+  - name: Theme Song
+    clip: {fileID: 8300000, guid: 54097a58dbafcde4d969fc158c473348, type: 3}
+    volume: 0.5
+    pitch: 0
+    loop: 1
+    bgm: 1
+    source: {fileID: 0}
+  - name: Steal
+    clip: {fileID: 8300000, guid: 80963f4fd82a07f45bfcb94fc0b97e6c, type: 3}
+    volume: 0.5
+    pitch: 0
+    loop: 0
+    bgm: 0
+    source: {fileID: 0}
+  - name: Block
+    clip: {fileID: 8300000, guid: 9b0a125773a2ec74a82032e7fe0a4f8b, type: 3}
+    volume: 0.5
+    pitch: 0
+    loop: 0
+    bgm: 0
+    source: {fileID: 0}
+  - name: Pickup Candy
+    clip: {fileID: 8300000, guid: 2c53e43e2943e314693e23d881fa959c, type: 3}
+    volume: 0.5
+    pitch: 0
+    loop: 0
+    bgm: 0
+    source: {fileID: 0}
