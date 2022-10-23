@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
 guid: eef4b2515b7422e499385ac36e3cf0af
+========
+guid: d1642fbd945666a4485fe65b93b6ce04
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -23,6 +27,11 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 1
   streamingMipmapsPriority: 0
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
+========
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -32,11 +41,19 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
     aniso: 3
     mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
+========
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -51,9 +68,15 @@ TextureImporter:
   alphaUsage: 0
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
   textureType: 6
+========
+  textureType: 0
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -63,7 +86,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_light.exr.meta
     textureCompression: 0
+========
+    textureCompression: 1
+>>>>>>>> MainLevel:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -83,6 +110,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
