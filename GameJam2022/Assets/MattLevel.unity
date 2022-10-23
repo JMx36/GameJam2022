@@ -2938,8 +2938,8 @@ Transform:
   - {fileID: 2052712397}
   - {fileID: 316585565}
   - {fileID: 1989028078}
-  - {fileID: 557310401}
   - {fileID: 753658519}
+  - {fileID: 557310401}
   - {fileID: 375110982}
   - {fileID: 1291023289}
   - {fileID: 1002701608}
@@ -5365,7 +5365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1614509582
 Light:
   m_ObjectHideFlags: 0
