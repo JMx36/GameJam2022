@@ -46,7 +46,8 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
                 }
             }
-            else if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
+            else if (canSeeTarget()) {
+            //else if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
                 seek(player.transform.position);
                 
             } else {
@@ -70,11 +71,12 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
     }
 
+    
     private void wander()
     {
         Vector3 wanderTarget = Vector3.zero;
-        float wanderRadius = 20;
-        float wanderDistance = 10;
+        float wanderRadius = 10;
+        float wanderDistance = 20;
         float wanderJitter = 1;
 
         wanderTarget += new Vector3(Random.Range(-1.0f, 1.0f) * wanderJitter, 0, Random.Range(-1.0f, 1.0f) * wanderJitter);
@@ -83,6 +85,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
         Vector3 targetLocal = wanderTarget + new Vector3(0, 0, wanderDistance);
         Vector3 targetWorld = gameObject.transform.InverseTransformVector(targetLocal);
+
         seek(targetWorld);
 
     }
@@ -95,6 +98,19 @@ public class Enemy_BehaviorTree : MonoBehaviour
             Debug.Log("Stunned till " + stunTime + "\nCurrent time: " + Time.realtimeSinceStartup);
         }
         
+    }
+
+    private bool canSeeTarget()
+    {
+        RaycastHit raycastInfo;
+        Vector3 rayToTarget = player.transform.position - transform.position;
+
+        if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
+            if (raycastInfo.transform.gameObject.tag == "Player") {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
