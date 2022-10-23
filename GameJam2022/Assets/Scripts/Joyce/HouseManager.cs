@@ -54,8 +54,8 @@ public class HouseManager : MonoBehaviour
             ResetHouses();
             takenHouses.Clear();
 
-            //SetHouses(lowHouses, lowCol, lowSpawn, 1);
-            //SetHouses(midHouses, midCol, midSpawn, 2);
+            SetHouses(lowHouses, lowCol, lowSpawn, 1);
+            SetHouses(midHouses, midCol, midSpawn, 2);
             SetHouses(highHouses, highCol, highSpawn, 3);
 
             yield return new WaitForSeconds(spawnPeriod);

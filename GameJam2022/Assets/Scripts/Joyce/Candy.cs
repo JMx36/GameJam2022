@@ -30,6 +30,7 @@ public class Candy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            print("candy triggered");
             gm.AddPoints(point);
             Destroy(gameObject);
         }
