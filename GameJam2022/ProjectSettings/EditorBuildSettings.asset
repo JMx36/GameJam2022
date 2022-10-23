@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/MattLevel.unity
     guid: 1d13a2cd341b7904db402498df394948
   - enabled: 1
-    path: Assets/MAIN_SCENE.unity
+    path: Assets/Scenes/Game Scenes/MAIN_SCENE.unity
     guid: 8d4c507da9d4fea4ab2cb42939ba9428
   m_configObjects: {}
