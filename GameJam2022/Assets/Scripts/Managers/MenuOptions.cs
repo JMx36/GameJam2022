@@ -8,9 +8,10 @@ public class MenuOptions : MonoBehaviour
     [SerializeField]
     private GameObject menuCanvas;
     [SerializeField]
-    private AudioMixer audioMixer;
+    private AudioMixerGroup audioMixerGroup;
     [SerializeField]
-    private AudioMixer sfxMixer; 
+    private AudioMixerGroup sfxMixerGroup; 
+    
 
     private void Update()
     {
@@ -31,12 +32,12 @@ public class MenuOptions : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("Volume", volume);
+        audioMixerGroup.audioMixer.SetFloat("MusicVolume", volume);
     }
 
     public void SetSfxVolume(float volume)
     {
-        sfxMixer.SetFloat("SFXVolume", volume);
+        sfxMixerGroup.audioMixer.SetFloat("SFXVolume", volume);
     }
 
     public void Quit()

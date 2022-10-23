@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class Enemy_BehaviorTree : MonoBehaviour
 {
-    //[SerializeField] private int playerDistance;
     private GameObject player;
     private NavMeshAgent agent;
     private Movement move;
@@ -20,6 +19,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
     private float stealTime = 0f;
     private int stealAmount = 1;
 
+    private static GameStateManager manager;
     static public int CANDY = 10; // FILLER VARIABLE
 
     
@@ -29,6 +29,8 @@ public class Enemy_BehaviorTree : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         move = player.GetComponent<Movement>();
         see = GetComponentInChildren<PlayerSee>();
+        if (manager == null)
+            manager = FindObjectOfType<GameStateManager>();
     }
 
     
@@ -100,15 +102,16 @@ public class Enemy_BehaviorTree : MonoBehaviour
     {
         if (stealTime < Time.realtimeSinceStartup) {
             FindObjectOfType<AudioManager>().Play("Steal");
-            CANDY -= stealAmount;
-            Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
-            if (CANDY <= 0) {
-                //GAMEOVER
-                Debug.Log("OUT OF CANDY");
-            } else {
-                stealAmount++;
-                stealTime = Time.realtimeSinceStartup + stealCD;
-            }
+            manager.LosePoints(stealAmount);
+            //CANDY -= stealAmount;
+            //Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
+            //if (CANDY <= 0) {
+            //    //GAMEOVER
+            //    Debug.Log("OUT OF CANDY");
+            //} else {
+            //    stealAmount++;
+            //    stealTime = Time.realtimeSinceStartup + stealCD;
+            //}
 
         }
     }
@@ -119,16 +122,6 @@ public class Enemy_BehaviorTree : MonoBehaviour
             return true;
         }
         return false;
-
-        //RaycastHit raycastInfo;
-        //Vector3 rayToTarget = player.transform.position - transform.position;
-
-        //if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
-        //    if (raycastInfo.transform.gameObject.tag == "Player" && !move.getHiding()) {
-        //        return true;
-        //    }
-        //}
-        //return false;
     }
 
 }
