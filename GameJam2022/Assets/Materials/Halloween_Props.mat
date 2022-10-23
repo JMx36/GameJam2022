@@ -2,14 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Halloween_Props
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
+  m_ValidKeywords:
+  - _EMISSION
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -37,7 +39,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 2800000, guid: 28b589325ec23ff4f8e2dfc8cc41d4ea, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 2.45, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Illum:
         m_Texture: {fileID: 2800000, guid: 9171932c5ce7f9649843faf380c6f8f2, type: 3}
@@ -45,7 +47,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: ca8a686643a6d5148a443feee130cd9d, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 2.45, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -59,6 +61,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -67,7 +70,7 @@ Material:
     - _EmissionLM: 0
     - _EmissionScaleUI: 1
     - _GlossMapScale: 1
-    - _Glossiness: 0.09
+    - _Glossiness: 0.46
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -82,3 +85,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 2, g: 2, b: 2, a: 1}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
