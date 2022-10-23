@@ -19,9 +19,8 @@ public class HouseManager : MonoBehaviour
     [SerializeField]
     private GameObject highSpawn;
 
-
     [SerializeField]
-    private GameObject enemySpawn;
+    private GameObject enemyPrefab;
 
 
     [SerializeField]
@@ -37,14 +36,14 @@ public class HouseManager : MonoBehaviour
     private int highHouses = 3;
 
     [SerializeField]
-    private float spawnPeriod = 60;
+    private float spawnPeriod = 120;
 
-    private List<int> takenHouses = new List<int>();
+    private List<int> takenHouses;
 
 
     void Start()
     {
-        List<int> takenHouses = new List<int>();
+        takenHouses = new List<int>();
         StartCoroutine(PickHouses());
     }
 
@@ -52,34 +51,58 @@ public class HouseManager : MonoBehaviour
     {
         while (true)
         {
-            List<int> takenHouses = new List<int>();
+            ResetHouses();
+            takenHouses.Clear();
 
-            SetHouses(lowHouses, lowCol, lowSpawn);
-            SetHouses(midHouses, midCol, midSpawn);
-            SetHouses(highHouses, highCol, highSpawn);
+            //SetHouses(lowHouses, lowCol, lowSpawn, 1);
+            //SetHouses(midHouses, midCol, midSpawn, 2);
+            SetHouses(highHouses, highCol, highSpawn, 3);
 
             yield return new WaitForSeconds(spawnPeriod);
         }
     }
-    private void SetHouses(int numHouses, Color lightCol, GameObject spawn, bool safe = false)
+    private void SetHouses(int numHouses, Color lightCol, GameObject spawn, int level)
     {
-        int i = 0;
+        int i = 1;
 
-        while (i < numHouses)
+        while (i <= numHouses)
         {
             int index = Random.Range(0, houses.Count);
             if (!takenHouses.Contains(index))
             {
                 houses[index].LightsOn(lightCol);
                 houses[index].SetSpawn(spawn);
+                houses[index].SetLevel(level);
 
-                if (safe)
+                if (level == 1)
                 {
-                    houses[index].SpawnCandy();
+                    houses[index].Spawn();
                 }
+                else
+                {
+                    int randNum = Random.Range(0, 2);
+
+                    if(randNum == 0)
+                    {
+                        houses[index].SetSpawn(enemyPrefab);
+                        houses[index].Spawn();
+                    }
+                }
+
+                takenHouses.Add(index);
+
+                i++;
             }
         }
 
+    }
 
+    private void ResetHouses()
+    {
+        foreach (House house in houses)
+        {
+            house.LightsOff();
+            house.Despawn();
+        }
     }
 }
