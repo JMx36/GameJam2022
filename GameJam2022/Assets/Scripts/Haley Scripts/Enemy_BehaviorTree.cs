@@ -103,6 +103,8 @@ public class Enemy_BehaviorTree : MonoBehaviour
         if (stealTime < Time.realtimeSinceStartup) {
             FindObjectOfType<AudioManager>().Play("Steal");
             manager.LosePoints(stealAmount);
+            stealAmount++;
+            stealTime = Time.realtimeSinceStartup + stealCD;
             //CANDY -= stealAmount;
             //Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
             //if (CANDY <= 0) {
