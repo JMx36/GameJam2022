@@ -8,7 +8,7 @@ public class GameStateManager : MonoBehaviour
 
     private static int high_score = 0;
 
-    private static int candies = 0; 
+    public static int candies = 0; 
 
     private void Awake()
     {
