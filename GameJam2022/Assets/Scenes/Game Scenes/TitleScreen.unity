@@ -1944,6 +1944,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2346351086042907455, guid: 0c8b9bf4d00c9b846960518971a78de4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346351086042907456, guid: 0c8b9bf4d00c9b846960518971a78de4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346351086042907457, guid: 0c8b9bf4d00c9b846960518971a78de4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7176290717790549172, guid: 0c8b9bf4d00c9b846960518971a78de4, type: 3}
       propertyPath: m_Name
       value: Enemy- Red
@@ -2291,7 +2303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click on spacebar to hide
+  m_text: Click on spacebar inside of the bush to hide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
