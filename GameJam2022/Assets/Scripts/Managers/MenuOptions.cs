@@ -27,7 +27,6 @@ public class MenuOptions : MonoBehaviour
         }
     }
 
-
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("Volume", volume);

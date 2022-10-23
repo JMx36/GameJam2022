@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
-    private bool hasStarted = false;
-
     private static GameStateManager manager;
 
     private static int high_score = 0;
@@ -34,16 +32,8 @@ public class GameStateManager : MonoBehaviour
 
     public static void NewGame()
     {
-        if (manager.hasStarted) 
-        {
-            SceneManager.LoadScene("Level1"); //TODO Change this to the actual name
-        }
-        else
-        {
-            SceneManager.LoadScene("TitleScreen"); //TODO Change this to the actual name
-        }
+        SceneManager.LoadScene("MAIN_SCENE"); //TODO Change this to the actual name
         Debug.Log("New Game");
-        manager.hasStarted = true;
     }
 
     public static void PauseRestart()
@@ -55,14 +45,13 @@ public class GameStateManager : MonoBehaviour
 
     public static void PauseGame(float time_value)
     {
-        ///state = GAMESTATE.PAUSED;
         Time.timeScale = time_value;
     }
 
 
     public static void EndScene() 
     {
-        SceneManager.LoadScene("EndScene");
+        SceneManager.LoadScene("End Scene");
     }
 
     
@@ -80,7 +69,7 @@ public class GameStateManager : MonoBehaviour
     {
         if (high_score < points)
         {
-            SceneManager.LoadScene("EndScene"); //TODO Change the name to the actual one
+            GameStateManager.EndScene(); //TODO Change the name to the actual one
         }
         else
         {
