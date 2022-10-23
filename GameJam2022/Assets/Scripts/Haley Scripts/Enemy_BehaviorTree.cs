@@ -122,16 +122,6 @@ public class Enemy_BehaviorTree : MonoBehaviour
             return true;
         }
         return false;
-
-        //RaycastHit raycastInfo;
-        //Vector3 rayToTarget = player.transform.position - transform.position;
-
-        //if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
-        //    if (raycastInfo.transform.gameObject.tag == "Player" && !move.getHiding()) {
-        //        return true;
-        //    }
-        //}
-        //return false;
     }
 
 }
