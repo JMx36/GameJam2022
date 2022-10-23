@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
+guid: 5a55d2076d832ee4799f1604b1abda9b
+========
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+guid: 77c6f043059e1f545808c977f6afb9d5
+========
+guid: 45c56db9fcef8bf45a04e0267b09ce3b
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
+>>>>>>>> main:GameJam2022/Assets/World Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 1
+  streamingMipmapsPriority: 0
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+========
+>>>>>>>> main:GameJam2022/Assets/World Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 1
+  seamlessCubemap: 1
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+========
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+    filterMode: 2
+    aniso: 0
+========
+    filterMode: 1
+    aniso: 3
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+>>>>>>>> main:GameJam2022/Assets/World Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
+========
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+  textureShape: 2
+========
+>>>>>>>> main:GameJam2022/Assets/World Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+  textureShape: 1
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+<<<<<<<< HEAD:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+    textureCompression: 1
+    compressionQuality: 100
+========
+    textureCompression: 0
+    compressionQuality: 50
+<<<<<<<< HEAD:GameJam2022/Assets/JaneArtWork/Halloween Free Pack/Texture/concrete_wall_006_rough_4k.exr.meta
+========
+>>>>>>>> MainLevel:GameJam2022/Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/Lightmap-0_comp_dir.png.meta
+>>>>>>>> main:GameJam2022/Assets/World Assets/FREE_Cartoon_Halloween_Pack/DemoScene/FREE_Cartoon_Halloween_Pack/ReflectionProbe-0.exr.meta
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

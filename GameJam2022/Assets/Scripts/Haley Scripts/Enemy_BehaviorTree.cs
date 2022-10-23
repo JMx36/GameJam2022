@@ -7,11 +7,18 @@ public class Enemy_BehaviorTree : MonoBehaviour
 {
     [SerializeField] private int playerDistance;
     private GameObject player;
-    private const float stunDelay = 5;
-    private const float stealDist = 4;
     private NavMeshAgent agent;
+
+    private const float stunDelay = 5f;
     private bool stun = false;
-    private float stunTime = 0;
+    private float stunTime = 0f;
+
+    [SerializeField] private const float stealDist = 3f;
+    [SerializeField]private float stealCD = 5f;
+    private float stealTime = 0f;
+    private int stealAmount = 1;
+
+    static public int CANDY = 10; // FILLER VARIABLE
 
     
     void Start()
@@ -24,12 +31,23 @@ public class Enemy_BehaviorTree : MonoBehaviour
     void FixedUpdate()
     {
         if (!stun) {
+
             if (Vector3.Distance(transform.position, player.transform.position) < stealDist) {
-                Debug.Log("Steal Candy");
-                // ADD COOLDOWN
+                if (stealTime < Time.realtimeSinceStartup) {
+                    CANDY -= stealAmount;
+                    Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
+                    if (CANDY <= 0) {
+                        //GAMEOVER
+                        Debug.Log("OUT OF CANDY");
+                    } else {
+                        stealAmount++;
+                        stealTime = Time.realtimeSinceStartup + stealCD;
+                    }
+
+                }
             }
-            else if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
-                Debug.Log("Seeking " + player.transform.position);
+            else if (canSeeTarget()) {
+            //else if (Vector3.Distance(transform.position, player.transform.position) < playerDistance) {
                 seek(player.transform.position);
                 
             } else {
@@ -37,10 +55,12 @@ public class Enemy_BehaviorTree : MonoBehaviour
             }   
 
         } else {
+
             if (stunTime < Time.realtimeSinceStartup) {
                 stun = false;
                 Debug.Log("Stun Done");
-            }                
+            }
+            
         }
         
     }
@@ -51,11 +71,12 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
     }
 
+    
     private void wander()
     {
         Vector3 wanderTarget = Vector3.zero;
-        float wanderRadius = 20;
-        float wanderDistance = 10;
+        float wanderRadius = 10;
+        float wanderDistance = 20;
         float wanderJitter = 1;
 
         wanderTarget += new Vector3(Random.Range(-1.0f, 1.0f) * wanderJitter, 0, Random.Range(-1.0f, 1.0f) * wanderJitter);
@@ -64,7 +85,7 @@ public class Enemy_BehaviorTree : MonoBehaviour
 
         Vector3 targetLocal = wanderTarget + new Vector3(0, 0, wanderDistance);
         Vector3 targetWorld = gameObject.transform.InverseTransformVector(targetLocal);
-        Debug.Log("Wandering to " + targetWorld);
+
         seek(targetWorld);
 
     }
@@ -77,6 +98,19 @@ public class Enemy_BehaviorTree : MonoBehaviour
             Debug.Log("Stunned till " + stunTime + "\nCurrent time: " + Time.realtimeSinceStartup);
         }
         
+    }
+
+    private bool canSeeTarget()
+    {
+        RaycastHit raycastInfo;
+        Vector3 rayToTarget = player.transform.position - transform.position;
+
+        if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
+            if (raycastInfo.transform.gameObject.tag == "Player") {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
