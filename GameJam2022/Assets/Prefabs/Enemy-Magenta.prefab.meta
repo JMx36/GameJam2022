@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:GameJam2022/Assets/Prefabs/Enemy-Magenta.prefab.meta
 guid: 1d678e85ab5a1fa4ab1148f5f7c011a2
+=======
+guid: f8f5453987eb5ed46a74d111465ef40d
+>>>>>>> Stashed changes:GameJam2022/Assets/Prefabs/Enemy-Orange.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
