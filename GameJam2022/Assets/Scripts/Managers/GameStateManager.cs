@@ -30,22 +30,37 @@ public class GameStateManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("HighScore", 0);
         }
+        Debug.Log(high_score);
     }
 
     public static void NewGame()
     {
         candies = 0;
+     // Updated upstream
         Enemy_BehaviorTree.stealIncrease = 10;
         Enemy_BehaviorTree.stealAmount = 10;
-        SceneManager.LoadScene("MAIN_SCENE"); //TODO Change this to the actual name
+        SceneManager.LoadScene("MAIN_SCENE");
+
+        SceneManager.LoadScene("MAIN_SCENE"); 
+     // Stashed changes
         Debug.Log("New Game");
+        if (high_score > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", high_score);
+        }
+        high_score = PlayerPrefs.GetInt("HighScore");
     }
+
 
     public static void PauseRestart()
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
         Time.timeScale = 1.0f;
+        if (high_score > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", high_score);
+        }
     }
 
     public static void PauseGame(float time_value)
@@ -85,7 +100,8 @@ public class GameStateManager : MonoBehaviour
         // Substracts the points (or amount of candy) from candies if not.
         if (candies <= points)
         {
-            GameStateManager.EndScene(); //TODO Change the name to the actual one
+            GameStateManager.EndScene();
+            candies = 0;
         }
         else
         {
@@ -96,7 +112,10 @@ public class GameStateManager : MonoBehaviour
     public static void Quit()
     {
         Debug.Log("Quitting");
-        PlayerPrefs.SetInt("HighScore", high_score);
+        if (high_score > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", high_score);
+        }
         Application.Quit();
     }
 
