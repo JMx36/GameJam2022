@@ -35,6 +35,8 @@ public class GameStateManager : MonoBehaviour
     public static void NewGame()
     {
         candies = 0;
+        Enemy_BehaviorTree.stealIncrease = 10;
+        Enemy_BehaviorTree.stealAmount = 10;
         SceneManager.LoadScene("MAIN_SCENE"); //TODO Change this to the actual name
         Debug.Log("New Game");
     }

@@ -17,11 +17,10 @@ public class Enemy_BehaviorTree : MonoBehaviour
     [SerializeField] private const float stealDist = 3f;
     [SerializeField]private float stealCD = 5f;
     private float stealTime = 0f;
-    private static int stealAmount = 10;
-    private static int stealIncrease = 10;
+    public static int stealAmount = 10;
+    public static int stealIncrease = 10;
 
     private static GameStateManager manager;
-    static public int CANDY = 10; // FILLER VARIABLE
 
     
     void Start()
@@ -106,15 +105,6 @@ public class Enemy_BehaviorTree : MonoBehaviour
             manager.LosePoints(stealAmount);
             stealAmount += stealIncrease;
             stealTime = Time.realtimeSinceStartup + stealCD;
-            //CANDY -= stealAmount;
-            //Debug.Log("Steal " + stealAmount + " candy\nHas " + CANDY + " candy left");
-            //if (CANDY <= 0) {
-            //    //GAMEOVER
-            //    Debug.Log("OUT OF CANDY");
-            //} else {
-            //    stealAmount++;
-            //    stealTime = Time.realtimeSinceStartup + stealCD;
-            //}
 
         }
     }
